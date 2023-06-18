@@ -6,9 +6,9 @@ import java.util.List;
 public class JadenCase {
     public static void main(String[] args) {
 
-
-
         String input = "How can mirrors be real if our eyes aren't real";
+//        String input = "  How can mirrors be real if our eyes aren't real  ";
+//        String input = "How     can mirrors be real if our eyes aren't real";
 //        String input = "";
 //        String input = "f";
 //        String input = "  ";
