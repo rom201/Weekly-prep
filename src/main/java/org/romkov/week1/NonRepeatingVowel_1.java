@@ -6,7 +6,7 @@ public class NonRepeatingVowel_1 {
 
     public static void main(String[] args) {
 
-        String str1 = "eoouuei";
+        String str1 = "";
         Integer result1 = getIndexOfFirstNonRepeatingVowel_listCollections(str1);
         Integer result2 = getIndexOfFirstNonRepeatingVowel_stream(str1);
 
@@ -87,6 +87,7 @@ public class NonRepeatingVowel_1 {
                     chList.stream().filter(ch->ch.equals("a") || ch.equals("e") || ch.equals("i") || ch.equals("o") || ch.equals("u"))
                             .filter(ch->Collections.frequency(chList, ch)==1).findFirst().get());
         }catch (Exception e) {
+            System.out.println(e.getMessage());
             return -1;
         }
     }

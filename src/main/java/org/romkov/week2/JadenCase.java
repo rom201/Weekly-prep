@@ -6,8 +6,8 @@ import java.util.List;
 public class JadenCase {
     public static void main(String[] args) {
 
-        String input = "How can mirrors be real if our eyes aren't real";
-//        String input = "  How can mirrors be real if our eyes aren't real  ";
+//        String input = "How can mirrors be real if our eyes aren't real";
+        String input = "      Jaden       Smith like to cAPItalizE the first LETTER of the words in a sentenCE!  ";
 //        String input = "How     can mirrors be real if our eyes aren't real";
 //        String input = "";
 //        String input = "f";
@@ -38,19 +38,37 @@ public class JadenCase {
 
     }
 
-
     public static String getJadenCasedStrings2(String jString) {
 
-        if (jString == null || jString.trim().isEmpty()) {
+//        if (jString == null || jString.trim().isEmpty()) {
+        if (jString == null || jString.isEmpty()) {
             return "";
         }
 
-        List<String> strList = Arrays.asList(jString.trim().split("\\s+"));
+        List<String> strList = Arrays.asList(jString.split(" +"));
         return strList.stream().map(p -> p.substring(0, 1).toUpperCase().concat(p.substring(1).toLowerCase() + " "))
                 .reduce((a, b) -> a.concat(b)).get().trim();
 
-
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
