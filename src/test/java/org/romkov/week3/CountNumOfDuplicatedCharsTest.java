@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CountNumOfDuplicatedCharsTest {
 
+
     @Test
     void getCountDuplicatedChars_noDuplicates() {
 

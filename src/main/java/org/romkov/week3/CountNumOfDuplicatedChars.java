@@ -1,15 +1,13 @@
 package org.romkov.week3;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class CountNumOfDuplicatedChars {
 
     public static void main(String[] args) {
 
         String str = "aabbcde";
-        System.out.println(getCountDuplicatedChars(str));
+        System.out.println(getCountDuplicatedChars2(str));
 
     }
 
@@ -23,6 +21,13 @@ public class CountNumOfDuplicatedChars {
 
         List<String> charList = Arrays.asList(str.toLowerCase().split(""));
         return charList.stream().filter(ch -> Collections.frequency(charList, ch)>1).distinct().count();
+    }
+
+    public static Integer getCountDuplicatedChars2(String str) {
+
+// need to construct
+
+        return 1;
     }
 
 }
